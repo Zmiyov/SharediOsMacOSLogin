@@ -5,7 +5,7 @@
 //  Created by Vladimir Pisarenko on 21.05.2024.
 //
 
-import Foundation
+import SwiftUI
 
 class LoginViewModel: ObservableObject {
     @Published var email = ""
@@ -17,6 +17,21 @@ class LoginViewModel: ObservableObject {
     //For go to registration page
     @Published var goToRegister = false
     
+    //MacOS Data
+    var screen: CGRect {
+        #if os(iOS)
+        return UIScreen.main.bounds
+        #else
+        return NSScreen.main!.visibleFrame
+        #endif
+    }
     
+    //detecting for MacOS
+    @Published var isMacOS = false
     
+    init() {
+#if !os(iOS)
+        self.isMacOS = true
+#endif
+    }
 }

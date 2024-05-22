@@ -15,3 +15,13 @@ struct SharediOsMacOSLoginApp: App {
         }
     }
 }
+
+#if !os(iOS)
+
+extension NSTextField {
+    open override var focusRingType: NSFocusRingType {
+        get{.none}
+        set{}
+    }
+}
+#endif

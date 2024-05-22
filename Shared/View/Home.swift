@@ -60,9 +60,12 @@ struct Home: View {
             ZStack{
 
                 if homeData.goToRegister {
-                    
+                    Register()
+                        .transition(homeData.isMacOS ? .identity : .scale)
                 } else {
                     Login()
+                        .transition(homeData.isMacOS ? .identity : .scale)
+                    
                 }
             }
             .overlay (
@@ -72,6 +75,7 @@ struct Home: View {
                         .resizable()
                         .modifier(LoginButtonModifier())
                 })
+                .buttonStyle(PlainButtonStyle())
                 .offset(x: -65)
                 ,alignment: .bottomTrailing
             )
@@ -79,6 +83,7 @@ struct Home: View {
         }
         .frame(maxHeight: .infinity)
         .background(Color("bg").ignoresSafeArea(.all, edges: .all))
+        .frame(width: homeData.isMacOS ? homeData.screen.width / 2 : nil, height: homeData.isMacOS ?  homeData.screen.height / 2 : nil)
         .environmentObject(homeData)
     }
 }

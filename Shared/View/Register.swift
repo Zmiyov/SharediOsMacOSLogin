@@ -13,9 +13,34 @@ struct Register : View {
     var body: some View {
         VStack(alignment: .leading, spacing: 18, content: {
 
+            Label(
+                title: {
+                    Text("Please Register")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.black)
+                },
+                icon: { 
+                    //Back button
+                    Button(action: {
+                        withAnimation {
+                            homeData.goToRegister.toggle()
+                        }
+                    }, label: {
+                        Image("right")
+                            .resizable()
+                            .renderingMode(.template)
+                            .frame(width: 20, height: 20)
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundStyle(.black)
+                            .rotationEffect(.init(degrees: 180))
+                    })
+                    .buttonStyle(PlainButtonStyle())
+                })
             
             Label(
-                title: { TextField("Enter Email", text: $homeData.email) },
+                title: { TextField("Enter Email", text: $homeData.email)
+                    .textFieldStyle(PlainTextFieldStyle()) },
                 icon: { Image(systemName: "envelope").frame(width: 30) }
             )
             .foregroundStyle(.gray)
@@ -23,7 +48,8 @@ struct Register : View {
             Divider()
             
             Label(
-                title: { TextField("Password", text: $homeData.password) },
+                title: { TextField("Password", text: $homeData.password)
+                    .textFieldStyle(PlainTextFieldStyle()) },
                 icon: { Image(systemName: "lock").frame(width: 30) }
             )
             .foregroundStyle(.gray)
@@ -31,7 +57,8 @@ struct Register : View {
             Divider()
             
             Label(
-                title: { TextField("Re-enter password", text: $homeData.reEnter) },
+                title: { TextField("Re-enter password", text: $homeData.reEnter)
+                    .textFieldStyle(PlainTextFieldStyle()) },
                 icon: { Image(systemName: "lock").frame(width: 30) }
             )
             .foregroundStyle(.gray)

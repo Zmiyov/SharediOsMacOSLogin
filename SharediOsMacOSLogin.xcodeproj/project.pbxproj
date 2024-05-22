@@ -7,12 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A52673DF2BFCE846004E65B3 /* SharediOsMacOSLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52673DE2BFCE846004E65B3 /* SharediOsMacOSLoginApp.swift */; };
-		A52673E12BFCE846004E65B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52673E02BFCE846004E65B3 /* ContentView.swift */; };
 		A52673E32BFCE847004E65B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52673E22BFCE847004E65B3 /* Assets.xcassets */; };
 		A52673E62BFCE847004E65B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52673E52BFCE847004E65B3 /* Preview Assets.xcassets */; };
-		A52673F42BFCE876004E65B3 /* SharediOSLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52673F32BFCE876004E65B3 /* SharediOSLoginApp.swift */; };
-		A52673F62BFCE876004E65B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52673F52BFCE876004E65B3 /* ContentView.swift */; };
 		A52673F82BFCE877004E65B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52673F72BFCE877004E65B3 /* Assets.xcassets */; };
 		A52673FB2BFCE877004E65B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52673FA2BFCE877004E65B3 /* Preview Assets.xcassets */; };
 		A52674032BFCE919004E65B3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52674022BFCE919004E65B3 /* Home.swift */; };
@@ -29,18 +25,20 @@
 		A52674142BFD39EE004E65B3 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52674122BFD3938004E65B3 /* Login.swift */; };
 		A52674162BFD3A74004E65B3 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52674152BFD3A74004E65B3 /* Register.swift */; };
 		A52674172BFD3A78004E65B3 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52674152BFD3A74004E65B3 /* Register.swift */; };
+		A5EC7BA72BFE1921004493F1 /* SharediOSLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52673F32BFCE876004E65B3 /* SharediOSLoginApp.swift */; };
+		A5EC7BA82BFE1924004493F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52673E02BFCE846004E65B3 /* ContentView.swift */; };
+		A5EC7BAB2BFE195F004493F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC7BA92BFE195F004493F1 /* ContentView.swift */; };
+		A5EC7BAC2BFE195F004493F1 /* SharediOsMacOSLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC7BAA2BFE195F004493F1 /* SharediOsMacOSLoginApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A52673DB2BFCE846004E65B3 /* SharediOsMacOSLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharediOsMacOSLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A52673DE2BFCE846004E65B3 /* SharediOsMacOSLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharediOsMacOSLoginApp.swift; sourceTree = "<group>"; };
 		A52673E02BFCE846004E65B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A52673E22BFCE847004E65B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A52673E52BFCE847004E65B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A52673E72BFCE847004E65B3 /* SharediOsMacOSLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SharediOsMacOSLogin.entitlements; sourceTree = "<group>"; };
 		A52673F12BFCE876004E65B3 /* SharediOSLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharediOSLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52673F32BFCE876004E65B3 /* SharediOSLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharediOSLoginApp.swift; sourceTree = "<group>"; };
-		A52673F52BFCE876004E65B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A52673F72BFCE877004E65B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A52673FA2BFCE877004E65B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A52674022BFCE919004E65B3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -50,6 +48,8 @@
 		A526740F2BFD3890004E65B3 /* LoginButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonModifier.swift; sourceTree = "<group>"; };
 		A52674122BFD3938004E65B3 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		A52674152BFD3A74004E65B3 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		A5EC7BA92BFE195F004493F1 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A5EC7BAA2BFE195F004493F1 /* SharediOsMacOSLoginApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharediOsMacOSLoginApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +92,8 @@
 		A52673DD2BFCE846004E65B3 /* SharediOsMacOSLogin */ = {
 			isa = PBXGroup;
 			children = (
-				A52673DE2BFCE846004E65B3 /* SharediOsMacOSLoginApp.swift */,
-				A52673E02BFCE846004E65B3 /* ContentView.swift */,
+				A5EC7BA92BFE195F004493F1 /* ContentView.swift */,
+				A5EC7BAA2BFE195F004493F1 /* SharediOsMacOSLoginApp.swift */,
 				A52673E22BFCE847004E65B3 /* Assets.xcassets */,
 				A52673E72BFCE847004E65B3 /* SharediOsMacOSLogin.entitlements */,
 				A52673E42BFCE847004E65B3 /* Preview Content */,
@@ -112,8 +112,8 @@
 		A52673F22BFCE876004E65B3 /* SharediOSLogin */ = {
 			isa = PBXGroup;
 			children = (
+				A52673E02BFCE846004E65B3 /* ContentView.swift */,
 				A52673F32BFCE876004E65B3 /* SharediOSLoginApp.swift */,
-				A52673F52BFCE876004E65B3 /* ContentView.swift */,
 				A52673F72BFCE877004E65B3 /* Assets.xcassets */,
 				A52673F92BFCE877004E65B3 /* Preview Content */,
 			);
@@ -270,12 +270,12 @@
 			files = (
 				A52674132BFD3938004E65B3 /* Login.swift in Sources */,
 				A526740D2BFD32A0004E65B3 /* LoginViewModifier.swift in Sources */,
+				A5EC7BAB2BFE195F004493F1 /* ContentView.swift in Sources */,
 				A52674092BFCF677004E65B3 /* LoginViewModel.swift in Sources */,
-				A52673E12BFCE846004E65B3 /* ContentView.swift in Sources */,
 				A52674032BFCE919004E65B3 /* Home.swift in Sources */,
 				A52674102BFD3890004E65B3 /* LoginButtonModifier.swift in Sources */,
+				A5EC7BAC2BFE195F004493F1 /* SharediOsMacOSLoginApp.swift in Sources */,
 				A52674162BFD3A74004E65B3 /* Register.swift in Sources */,
-				A52673DF2BFCE846004E65B3 /* SharediOsMacOSLoginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,13 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A52674142BFD39EE004E65B3 /* Login.swift in Sources */,
+				A5EC7BA72BFE1921004493F1 /* SharediOSLoginApp.swift in Sources */,
+				A5EC7BA82BFE1924004493F1 /* ContentView.swift in Sources */,
 				A526740E2BFD3869004E65B3 /* LoginViewModifier.swift in Sources */,
 				A526740A2BFCF759004E65B3 /* LoginViewModel.swift in Sources */,
-				A52673F62BFCE876004E65B3 /* ContentView.swift in Sources */,
 				A52674042BFCE996004E65B3 /* Home.swift in Sources */,
 				A52674112BFD390A004E65B3 /* LoginButtonModifier.swift in Sources */,
 				A52674172BFD3A78004E65B3 /* Register.swift in Sources */,
-				A52673F42BFCE876004E65B3 /* SharediOSLoginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

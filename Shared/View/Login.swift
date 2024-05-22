@@ -18,7 +18,8 @@ struct Login: View {
                 .foregroundStyle(.black)
             
             Label(
-                title: { TextField("Enter Email", text: $homeData.email) },
+                title: { TextField("Enter Email", text: $homeData.email)
+                    .textFieldStyle(PlainTextFieldStyle()) },
                 icon: { Image(systemName: "envelope").frame(width: 30) }
             )
             .foregroundStyle(.gray)
@@ -26,7 +27,8 @@ struct Login: View {
             Divider()
             
             Label(
-                title: { TextField("Password", text: $homeData.password) },
+                title: { TextField("Password", text: $homeData.password)
+                    .textFieldStyle(PlainTextFieldStyle()) },
                 icon: { Image(systemName: "lock").frame(width: 30) }
             )
             .foregroundStyle(.gray)
@@ -40,6 +42,7 @@ struct Login: View {
                         .font(.caption)
                         .fontWeight(.bold)
                 })
+                .buttonStyle(PlainButtonStyle())
                 
                 Spacer()
                 
@@ -53,6 +56,7 @@ struct Login: View {
                         .font(.caption)
                         .fontWeight(.bold)
                 })
+                .buttonStyle(PlainButtonStyle())
             }
             .foregroundStyle(.gray)
         })
