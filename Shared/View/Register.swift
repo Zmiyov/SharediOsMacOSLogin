@@ -23,6 +23,8 @@ struct Register : View {
                 icon: { 
                     //Back button
                     Button(action: {
+                        homeData.clearData()
+                        
                         withAnimation {
                             homeData.goToRegister.toggle()
                         }
@@ -48,16 +50,23 @@ struct Register : View {
             Divider()
             
             Label(
-                title: { TextField("Password", text: $homeData.password)
+                title: { SecureField("Password", text: $homeData.password)
                     .textFieldStyle(PlainTextFieldStyle()) },
                 icon: { Image(systemName: "lock").frame(width: 30) }
             )
-            .foregroundStyle(.gray)
+            .overlay(
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Image(systemName: "eye")
+                        .foregroundStyle(.gray)
+                })
+                .buttonStyle(PlainButtonStyle())
+                ,alignment: .trailing
+            )
             
             Divider()
             
             Label(
-                title: { TextField("Re-enter password", text: $homeData.reEnter)
+                title: { SecureField("Re-enter password", text: $homeData.reEnter)
                     .textFieldStyle(PlainTextFieldStyle()) },
                 icon: { Image(systemName: "lock").frame(width: 30) }
             )

@@ -27,11 +27,18 @@ struct Login: View {
             Divider()
             
             Label(
-                title: { TextField("Password", text: $homeData.password)
+                title: { SecureField("Password", text: $homeData.password)
                     .textFieldStyle(PlainTextFieldStyle()) },
                 icon: { Image(systemName: "lock").frame(width: 30) }
             )
-            .foregroundStyle(.gray)
+            .overlay(
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Image(systemName: "eye")
+                        .foregroundStyle(.gray)
+                })
+                .buttonStyle(PlainButtonStyle())
+                ,alignment: .trailing
+            )
             
             Divider()
             
@@ -47,8 +54,10 @@ struct Login: View {
                 Spacer()
                 
                 Button(action: {
+                    homeData.clearData()
                     //Going to register page...
                     withAnimation {
+                   
                         homeData.goToRegister.toggle()
                     }
                 }, label: {

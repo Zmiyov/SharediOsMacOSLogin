@@ -10,9 +10,16 @@ import SwiftUI
 @main
 struct SharediOsMacOSLoginApp: App {
     var body: some Scene {
+        #if os(iOS)
         WindowGroup {
             ContentView()
         }
+        #else
+        WindowGroup {
+            ContentView()
+        }
+        .windowStyle(HiddenTitleBarWindowStyle())
+        #endif
     }
 }
 

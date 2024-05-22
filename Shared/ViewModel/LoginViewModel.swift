@@ -34,4 +34,12 @@ class LoginViewModel: ObservableObject {
         self.isMacOS = true
 #endif
     }
+    
+    //Clearing data when going to login
+    
+    func clearData() {
+        email = ""
+        password = ""
+        reEnter = ""
+    }
 }
